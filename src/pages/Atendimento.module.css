@@ -22,7 +22,6 @@
     max-width: 99vw;
     overflow: hidden;
     animation: Opacity 1.2s ease-out;
-    background: white;
 }
 
 .header {
@@ -64,6 +63,7 @@
     width: 100%;
     min-height: 90vh;
     margin: 2vw;
+    background: white;
 }
 
 .main h3 {
