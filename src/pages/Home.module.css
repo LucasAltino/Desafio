@@ -1,0 +1,146 @@
+@keyframes Opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-35vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30vw);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.contain {
+    display: grid;
+    grid-template-rows: 1fr 10fr 1fr;
+    height: 100vh;
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.principal {
+    background-image: url('/public/fundo.png');
+    background-size: contain;
+    width: 78%;
+    height: 93%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr 5fr;
+    overflow: hidden;
+    animation: Opacity 1.2s ease-out;
+}
+
+.img img {
+    width: 13vw;
+}
+
+.elemento1 {
+    display: flex;
+    justify-content: flex-start;
+    width: 100vw;
+}
+
+.elemento1 img {
+    width: 16vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.elemento2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.elemento2 .atras {
+    width: 36vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.elemento2 .afrente {
+    width: 25%;
+    position: fixed;
+    bottom: 0;
+    right: 5vw;
+    animation: slideUp 1.2s ease-out;
+}
+
+.escritas {
+    position: relative;
+    animation: slideLeft 1.2s ease-out;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.conteudo h1 {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    text-align: left;
+    font-size: 5vw;
+    width: 100%;
+    margin: 1.5vw 0;
+}
+
+.conteudo h2 {
+    font-family: "Madimi One", sans-serif;
+    padding: 0.5vw 2.5vw;
+    background-color: #FAA81E;
+    border-radius: 5vw;
+    font-size: 1.3vw;
+    width: 25%;
+    margin: 0;
+}
+
+.conteudo h3 {
+    font-family: "Madimi One", sans-serif;
+    padding: 1vw 2.5vw;
+    background-color: #FAA81E;
+    border-radius: 5vw 0 0 5vw;
+    font-size: 1.3vw;
+    width: 15%;
+    position: absolute;
+    right: 0;
+    top: 14%;
+    text-decoration: none;
+    color: #144835;
+    margin: 0;
+}
+
+.conteudo p {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 500;
+    width: 60%;
+    text-align: left;
+    font-size: 1.3vw;
+    margin: 0;
+}

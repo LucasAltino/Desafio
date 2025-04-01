@@ -1,0 +1,130 @@
+@keyframes Opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-35vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.contain {
+    min-height: 97vh;
+    width: 100vw;
+    max-width: 99vw;
+    overflow: hidden;
+    animation: Opacity 1.2s ease-out;
+}
+
+.header {
+    background-color: #2E785D;
+    width: 100%;
+    max-width: 100vw;
+    padding: 1.5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.icon {
+    display: grid;
+    align-items: center;
+    background: #FAA81E;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    justify-items: center;
+    margin-left: 5%;
+}
+
+.icon svg {
+    width: 55%;
+    fill: white;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 30%;
+}
+
+.main {
+    width: 100%;
+    min-height: 90vh;
+    margin: 2vw;
+}
+
+.main h3 {
+    font-family: "Madimi One", sans-serif;
+    background-color: #FAA81E;
+    font-size: 1.3vw;
+    color: #144835;
+    margin: 0;
+    position: relative;
+    text-decoration: none;
+}
+
+.consulta {
+    display: flex;
+    justify-content: center;
+    background-color: #FAA81E;
+    border-radius: 5vw 0 0 5vw;
+    padding: 1vw 2.5vw;
+    align-items: center;
+    position: relative;
+    right: -63vw;
+    width: 30%;
+    gap: 1vw;
+}
+
+.tituloAtend {
+    text-align: start;
+    font-family: "Madimi One", sans-serif;
+    font-size: 1.3vw;
+    padding: 1vw;
+    color: black;
+    position: relative;
+    animation: slideLeft 1.2s ease-out;
+}
+
+.cards {
+    padding: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vw;
+}
+
+.consulta button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8vw;
+    border-radius: 50%;
+    width: 2.5vw;
+    height: 2.5vw;
+    outline: none;
+}
+
+.consulta input {
+    border-radius: 5vw;
+    border: none;
+    padding: 0.5vw 1vw;
+    font-family: "Madimi One", sans-serif;
+    font-size: 1.1vw;
+    outline: none;
+}
+
+.consulta svg {
+    width: 100%;
+}
