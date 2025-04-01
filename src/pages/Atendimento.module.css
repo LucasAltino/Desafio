@@ -22,6 +22,7 @@
     max-width: 99vw;
     overflow: hidden;
     animation: Opacity 1.2s ease-out;
+    background: white;
 }
 
 .header {
