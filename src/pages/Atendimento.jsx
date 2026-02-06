@@ -14,7 +14,7 @@ function Atendimento() {
                 "https://api.thedogapi.com/v1/breeds",
                 {
                     headers: {
-                        "x-api-key": import.meta.env.VITE_DOG_API_KEY
+                        "x-api-key": "live_tXBREocsmIHr8Im9TNpBubUdCwqANuAwKEmZZPBthsZwD0cfywNRoaPxFV3En3KI"
                     }
                 }
             );
