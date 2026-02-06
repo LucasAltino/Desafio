@@ -22,6 +22,7 @@
     max-width: 99vw;
     overflow: hidden;
     animation: Opacity 1.2s ease-out;
+    background: white;
 }
 
 .header {
@@ -87,6 +88,7 @@
     right: -63vw;
     width: 30%;
     gap: 1vw;
+    background: white;
 }
 
 .tituloAtend {
@@ -124,6 +126,7 @@
     font-family: "Madimi One", sans-serif;
     font-size: 1.1vw;
     outline: none;
+    background: white;
 }
 
 .consulta svg {
