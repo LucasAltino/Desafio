@@ -5,10 +5,11 @@ function Card({ pets }) {
         <div className={style.contain}>
             {pets.map((pet) => (
                 <div key={pet.id} className={style.cardInfo}>
-                    {pet.reference_image_id ? (
+                    {pet.image?.url ? (
                         <div className={style.foto}>
                             <img 
-                                src={`https://cdn2.thedogapi.com/images/${pet.reference_image_id}.jpg`} 
+                                src={pet.image.url}
+                                alt={pet.name}
                             />
                         </div>
                     ) : (
