@@ -88,7 +88,6 @@
     right: -63vw;
     width: 30%;
     gap: 1vw;
-    background: white;
 }
 
 .tituloAtend {
@@ -117,6 +116,7 @@
     width: 2.5vw;
     height: 2.5vw;
     outline: none;
+    background: white;
 }
 
 .consulta input {
