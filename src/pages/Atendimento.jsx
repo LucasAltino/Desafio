@@ -9,17 +9,37 @@ function Atendimento() {
     const [search, setSearch] = useState("");
 
     const fetchPets = async () => {
-        const response = await fetch("https://api.thedogapi.com/v1/breeds");
-        const data = await response.json();
-        
-        console.log("Dados da API:", data);
-        
-        const filto = data.filter(pet => pet.id.toString() === search);
-
-        if (filto.length > 0) {
-            setPets(prevPets => [...prevPets, ...filto]);
+        try {
+            const response = await fetch(
+                "https://api.thedogapi.com/v1/breeds",
+                {
+                    headers: {
+                        "x-api-key": import.meta.env.VITE_DOG_API_KEY
+                    }
+                }
+            );
+    
+            const data = await response.json();
+            console.log("Dados da API:", data);
+    
+            if (!Array.isArray(data)) {
+                console.error("Resposta inesperada:", data);
+                return;
+            }
+    
+            const filtro = data.filter(
+                pet => pet.id.toString() === search
+            );
+    
+            if (filtro.length > 0) {
+                setPets(prev => [...prev, ...filtro]);
+            }
+    
+        } catch (error) {
+            console.error("Erro na requisição:", error);
         }
     };
+
 
     return (
         <div className={style.contain}>
