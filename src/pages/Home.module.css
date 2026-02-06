@@ -110,6 +110,8 @@
     font-size: 5vw;
     width: 100%;
     margin: 1.5vw 0;
+    color: #144835;
+
 }
 
 .conteudo h2 {
@@ -144,4 +146,6 @@
     text-align: left;
     font-size: 1.3vw;
     margin: 0;
+    color: #144835;
+
 }
